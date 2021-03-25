@@ -77,11 +77,11 @@ public class Jugadores extends Fragment {
         check_trikko = (CheckBox) getView().findViewById(R.id.checkbox_trikko);
         check_jd = (CheckBox) getView().findViewById(R.id.checkbox_jd);
 
-        valido = new Jugador("Valido", R.drawable.valido, R.raw.cancion_valido);
-        ana = new Jugador("Ana", R.drawable.ana, R.raw.cancion_ana);
-        melero = new Jugador("Melero", R.drawable.melero, R.raw.cancion_melero);
-        max = new Jugador("Max", R.drawable.max, R.raw.cancion_max);
-        trikko = new Jugador("Trikko", R.drawable.trikko);
+        valido = new Jugador("Valido", R.drawable.valido, R.raw.cancion_valido, 147000);
+        ana = new Jugador("Ana", R.drawable.ana, R.raw.cancion_ana, 11000);
+        melero = new Jugador("Melero", R.drawable.melero, R.raw.cancion_melero, 0);
+        max = new Jugador("Max", R.drawable.max, R.raw.cancion_max, 0);
+        trikko = new Jugador("Trikko", R.drawable.trikko, R.raw.cancion_trikko, 71000);
         jd = new Jugador("JD", R.drawable.jd);
 
         check_valido.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {

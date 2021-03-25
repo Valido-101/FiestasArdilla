@@ -131,20 +131,11 @@ public class Eleccion extends Fragment implements View.OnClickListener{
 
             if(jugador_elegido.getCancion()!=0)
             {
-                if (jugador_elegido.getNombre().equals("Valido"))
-                {
-                    reproductor = MediaPlayer.create(getContext(), jugador_elegido.getCancion());
+                reproductor = MediaPlayer.create(getContext(), jugador_elegido.getCancion());
 
-                    reproductor.seekTo(147000);
+                reproductor.seekTo(jugador_elegido.getInicio_reproduccion());
 
-                    reproductor.start();
-                }
-                else
-                {
-                    reproductor = MediaPlayer.create(getContext(), jugador_elegido.getCancion());
-
-                    reproductor.start();
-                }
+                reproductor.start();
             }
         }
         else

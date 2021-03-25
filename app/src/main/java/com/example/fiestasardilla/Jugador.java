@@ -5,13 +5,15 @@ public class Jugador {
     private String nombre;
     private int imagen;
     private int cancion;
+    private int inicio_reproduccion;
 
     //Constructor con canción
-    public Jugador(String nombre, int imagen, int cancion)
+    public Jugador(String nombre, int imagen, int cancion, int inicio_reproduccion)
     {
         this.nombre = nombre;
         this.imagen = imagen;
         this.cancion = cancion;
+        this.inicio_reproduccion = inicio_reproduccion;
     }
 
     //Constructor sin canción
@@ -32,5 +34,9 @@ public class Jugador {
 
     public int getCancion() {
         return cancion;
+    }
+
+    public int getInicio_reproduccion() {
+        return inicio_reproduccion;
     }
 }
