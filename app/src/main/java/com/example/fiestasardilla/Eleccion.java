@@ -163,7 +163,10 @@ public class Eleccion extends Fragment implements View.OnClickListener{
     public void onDestroyView() {
         super.onDestroyView();
 
-        reproductor.release();
+        if (reproductor!=null)
+        {
+            reproductor.release();
+        }
     }
 
     public ArrayList<Jugador> getJugadores() {
