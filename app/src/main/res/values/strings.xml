@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Fiestas Ardilla</string>
+    <string name="btn_text">¡Saca a alguien al azar!</string>
+    <string name="valido">Valido</string>
+    <string name="ana">Ana</string>
+    <string name="melero">Melero</string>
+    <string name="max">Max</string>
+    <string name="trikko">Trikko</string>
+    <string name="jd">JD</string>
+</resources>
