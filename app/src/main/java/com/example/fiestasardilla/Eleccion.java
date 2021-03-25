@@ -159,6 +159,13 @@ public class Eleccion extends Fragment implements View.OnClickListener{
         txt_nombre.setText("¿Quién será?");
     }
 
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+
+        reproductor.release();
+    }
+
     public ArrayList<Jugador> getJugadores() {
         return jugadores;
     }

@@ -1,9 +1,13 @@
 package com.example.fiestasardilla;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.Manifest;
+import android.content.Context;
+import android.content.pm.PackageManager;
 import android.media.MediaPlayer;
 import android.net.wifi.p2p.WifiP2pManager;
 import android.os.Bundle;
@@ -25,8 +29,6 @@ import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity{
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,5 +41,6 @@ public class MainActivity extends AppCompatActivity{
         //Le damos el ViewPager al TabLayout
         TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
         tabLayout.setupWithViewPager(viewPager);
+
     }
 }

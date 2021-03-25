@@ -81,7 +81,7 @@ public class Jugadores extends Fragment {
         ana = new Jugador("Ana", R.drawable.ana, R.raw.cancion_ana, 11000);
         melero = new Jugador("Melero", R.drawable.melero, R.raw.cancion_melero, 0);
         max = new Jugador("Max", R.drawable.max, R.raw.cancion_max, 0);
-        trikko = new Jugador("Trikko", R.drawable.trikko, R.raw.cancion_trikko, 71000);
+        trikko = new Jugador("Trikko", R.drawable.trikko, R.raw.cancion_trikko, 44000);
         jd = new Jugador("JD", R.drawable.jd);
 
         check_valido.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
