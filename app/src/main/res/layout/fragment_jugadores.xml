@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Jugadores">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/checkbox_valido"
+            android:text="@string/valido"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/checkbox_ana"
+            android:text="@string/ana"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/checkbox_melero"
+            android:text="@string/melero"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/checkbox_max"
+            android:text="@string/max"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/checkbox_trikko"
+            android:text="@string/trikko"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/checkbox_jd"
+            android:text="@string/jd"/>
+
+    </LinearLayout>
+
+</FrameLayout>

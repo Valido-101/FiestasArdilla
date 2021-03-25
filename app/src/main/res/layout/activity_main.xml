@@ -1,89 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true">
-
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:id="@+id/checkbox_valido"
-            android:text="@string/valido"/>
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:id="@+id/checkbox_ana"
-            android:text="@string/ana"
-            android:layout_toRightOf="@id/checkbox_valido"/>
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:id="@+id/checkbox_melero"
-            android:text="@string/melero"
-            android:layout_toRightOf="@id/checkbox_ana"/>
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:id="@+id/checkbox_max"
-            android:text="@string/max"
-            android:layout_below="@id/checkbox_valido"/>
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:id="@+id/checkbox_trikko"
-            android:text="@string/trikko"
-            android:layout_below="@id/checkbox_ana"
-            android:layout_toRightOf="@id/checkbox_max"/>
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:id="@+id/checkbox_jd"
-            android:text="@string/jd"
-            android:layout_below="@id/checkbox_melero"
-            android:layout_toRightOf="@id/checkbox_trikko"/>
-
-    </RelativeLayout>
-    
-    <ImageView
-        android:id="@+id/img_jugador"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_centerInParent="true"/>
-
-    <TextView
-        android:id="@+id/nombre_jugador"
-        android:layout_width="150dp"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/sliding_tabs"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_above="@id/img_jugador"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp"
-        android:textAlignment="center"
-        android:textSize="30dp"
-        android:textStyle="bold"/>
+        app:tabMode="fixed"/>
 
-    <Button
-        android:id="@+id/btn_comenzar"
-        android:text="@string/btn_text"
-        android:layout_width="150dp"
-        android:layout_height="70dp"
-        android:layout_below="@id/img_jugador"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white" />
 
-    <Button
-        android:id="@+id/btn_reset"
-        android:layout_width="wrap_content"
-        android:layout_height="70dp"
-        android:layout_below="@id/btn_comenzar"
-        android:layout_centerHorizontal="true"
-        android:text="Reset"
-        android:enabled="false"/>
-
-</RelativeLayout>
+</LinearLayout>
