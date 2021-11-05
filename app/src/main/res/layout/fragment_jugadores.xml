@@ -34,13 +34,28 @@
         <CheckBox
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:id="@+id/checkbox_trikko"
-            android:text="@string/trikko"/>
+            android:id="@+id/checkbox_jd"
+            android:text="@string/jd"/>
         <CheckBox
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:id="@+id/checkbox_jd"
-            android:text="@string/jd"/>
+            android:id="@+id/checkbox_mery"
+            android:text="@string/mery"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/checkbox_david"
+            android:text="@string/david"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/checkbox_abraham"
+            android:text="@string/abraham"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/checkbox_javi"
+            android:text="@string/javi"/>
 
     </LinearLayout>
 

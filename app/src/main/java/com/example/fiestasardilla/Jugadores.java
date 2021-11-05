@@ -25,8 +25,11 @@ public class Jugadores extends Fragment {
     CheckBox check_ana;
     CheckBox check_melero;
     CheckBox check_max;
-    CheckBox check_trikko;
     CheckBox check_jd;
+    CheckBox check_mery;
+    CheckBox check_david;
+    CheckBox check_abraham;
+    CheckBox check_javi;
     //Lista de jugadores
     ArrayList<Jugador> jugadores = new ArrayList<>();
     //Jugadores
@@ -34,8 +37,11 @@ public class Jugadores extends Fragment {
     Jugador ana;
     Jugador melero;
     Jugador max;
-    Jugador trikko;
     Jugador jd;
+    Jugador mery;
+    Jugador david;
+    Jugador abraham;
+    Jugador javi;
 
     public Jugadores() {
         // Required empty public constructor
@@ -74,15 +80,21 @@ public class Jugadores extends Fragment {
         check_ana = (CheckBox) getView().findViewById(R.id.checkbox_ana);
         check_melero = (CheckBox) getView().findViewById(R.id.checkbox_melero);
         check_max = (CheckBox) getView().findViewById(R.id.checkbox_max);
-        check_trikko = (CheckBox) getView().findViewById(R.id.checkbox_trikko);
         check_jd = (CheckBox) getView().findViewById(R.id.checkbox_jd);
+        check_mery = (CheckBox) getView().findViewById(R.id.checkbox_mery);
+        check_david = (CheckBox) getView().findViewById(R.id.checkbox_david);
+        check_abraham = (CheckBox) getView().findViewById(R.id.checkbox_abraham);
+        check_javi = (CheckBox) getView().findViewById(R.id.checkbox_javi);
 
         valido = new Jugador("Valido", R.drawable.valido, R.raw.cancion_valido, 147000);
         ana = new Jugador("Ana", R.drawable.ana, R.raw.cancion_ana, 11000);
         melero = new Jugador("Melero", R.drawable.melero, R.raw.cancion_melero, 0);
         max = new Jugador("Max", R.drawable.max, R.raw.cancion_max, 0);
-        trikko = new Jugador("Trikko", R.drawable.trikko, R.raw.cancion_trikko, 44000);
         jd = new Jugador("JD", R.drawable.jd);
+        mery = new Jugador("Mery", R.drawable.imagen_mery, R.raw.cancion_mery, 0);
+        david = new Jugador("David", R.drawable.imagen_david);
+        abraham = new Jugador("Abraham", R.drawable.imagen_abraham, R.raw.cancion_akatsuki, 0);
+        javi = new Jugador("Javi", R.drawable.imagen_javi, R.raw.cancion_akatsuki, 0);
 
         check_valido.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -140,20 +152,6 @@ public class Jugadores extends Fragment {
             }
         });
 
-        check_trikko.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked)
-                {
-                    jugadores.add(trikko);
-                }
-                else
-                {
-                    jugadores.remove(trikko);
-                }
-            }
-        });
-
         check_jd.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -164,6 +162,62 @@ public class Jugadores extends Fragment {
                 else
                 {
                     jugadores.remove(jd);
+                }
+            }
+        });
+
+        check_mery.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked)
+                {
+                    jugadores.add(mery);
+                }
+                else
+                {
+                    jugadores.remove(mery);
+                }
+            }
+        });
+
+        check_david.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked)
+                {
+                    jugadores.add(david);
+                }
+                else
+                {
+                    jugadores.remove(david);
+                }
+            }
+        });
+
+        check_abraham.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked)
+                {
+                    jugadores.add(abraham);
+                }
+                else
+                {
+                    jugadores.remove(abraham);
+                }
+            }
+        });
+
+        check_javi.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked)
+                {
+                    jugadores.add(javi);
+                }
+                else
+                {
+                    jugadores.remove(javi);
                 }
             }
         });
